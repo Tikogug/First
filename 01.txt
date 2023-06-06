@@ -1,0 +1,88 @@
+
+// Interface
+interface maxEvenAge {
+    public void maxAge();
+}
+
+//  Age"implements" maxEvenAge interface
+class Age implements maxEvenAge {
+    public void maxAge() {
+
+        int temp, size;
+        int[] array1 = {26, 12, 7};
+        size = array1.length;
+
+        for (int i = 0; i < size; i++) {
+            int j;
+            for (j = i + 1; j < size; j++) {
+            }
+            if (array1[i] > array1[j]) {
+                temp = array1[i];
+                array1[i] = array1[j];
+                array1[j] = temp;
+                {
+                    // The body of maxAge() is provided here
+                    System.out.println("Third largest element is:: " + array1[size - 1]);
+
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Age implements maxEvenAge {
+
+
+
+    public static void main(String[] args){
+
+    }
+
+    public void maxAge() {
+        int temp, size;
+        int[] array1 = {26, 12, 7};
+        size = array1.length;
+
+        for (int i = 0; i < size; i++) {
+            int j;
+            for (j = i + 1; j < size; j++) {
+            }
+            if (array1[i] > array1[j]) {
+                temp = array1[i];
+                array1[i] = array1[j];
+                array1[j] = temp;
+                {
+                    // The body of maxAge() is provided here
+                    System.out.println("Third largest element is " + array1[size - 1]);
+
+
+                }
+
+
+        }
+            // The body of sleep() is provided here
+            System.out.println("ყველა ასაკი კენტია");
+        }
+    }
+
+    class Main {
+        public static void main(String[] args) {
+            Age myPig = new Age();  // Create a Pig object
+            myPig.maxAge();
+        }
+    }}
